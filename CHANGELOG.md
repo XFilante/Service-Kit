@@ -1,25 +1,25 @@
-# @xfilante/package-template
+# @xfilante/service-kit
 
 ## 0.0.4
 
 ### Patch Changes
 
-- Checking if package is working
+- fixed exports
 
 ## 0.0.3
 
 ### Patch Changes
 
-- updated package json
+- fixing exports
 
 ## 0.0.2
 
 ### Patch Changes
 
-- updated build files of package
+- fixing exports
 
 ## 0.0.1
 
 ### Patch Changes
 
-- First release
+- First version

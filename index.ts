@@ -7,4 +7,4 @@
 |
 */
 
-export * from './src/add.js'
+export * from './src/safe_route.js'

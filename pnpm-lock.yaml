@@ -8,6 +8,33 @@ importers:
 
   .:
     dependencies:
+      '@adonisjs/bouncer':
+        specifier: ^3.1.4
+        version: 3.1.4(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))
+      '@adonisjs/core':
+        specifier: ^6.14.1
+        version: 6.15.2(@vinejs/vine@3.0.0)
+      '@adonisjs/limiter':
+        specifier: ^2.3.2
+        version: 2.3.2(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))(@adonisjs/lucid@21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))(luxon@3.5.0))
+      '@adonisjs/lucid':
+        specifier: ^21.3.0
+        version: 21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))(luxon@3.5.0)
+      '@filante/arcessere':
+        specifier: ^0.0.3
+        version: 0.0.3(@filante/imprimer@0.0.2)
+      '@filante/imprimer':
+        specifier: ^0.0.2
+        version: 0.0.2
+      '@vinejs/vine':
+        specifier: ^3.0.0
+        version: 3.0.0
+      bentocache:
+        specifier: 1.0.0-beta.9
+        version: 1.0.0-beta.9(knex@3.1.0)(tslib@2.8.1)
+      luxon:
+        specifier: ^3.5.0
+        version: 3.5.0
       superjson:
         specifier: ^2.2.1
         version: 2.2.1
@@ -15,21 +42,9 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
     devDependencies:
-      '@adonisjs/bouncer':
-        specifier: 3.1.4
-        version: 3.1.4(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))
-      '@adonisjs/core':
-        specifier: ^6.14.1
-        version: 6.15.2(@vinejs/vine@2.1.0)
       '@adonisjs/eslint-config':
         specifier: ^2.0.0-beta.7
         version: 2.0.0-beta.7(eslint@9.15.0)(prettier@3.4.1)(typescript@5.7.2)
-      '@adonisjs/limiter':
-        specifier: 2.3.2
-        version: 2.3.2(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))(@adonisjs/lucid@21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))(luxon@3.5.0))
-      '@adonisjs/lucid':
-        specifier: 21.3.0
-        version: 21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))(luxon@3.5.0)
       '@adonisjs/prettier-config':
         specifier: ^1.3.0
         version: 1.4.0
@@ -39,9 +54,6 @@ importers:
       '@changesets/cli':
         specifier: ^2.27.9
         version: 2.27.10
-      '@filante/arcessere':
-        specifier: ^0.0.1
-        version: 0.0.1(@filante/imprimer@0.0.1)
       '@japa/assert':
         specifier: ^3.0.0
         version: 3.0.0(@japa/runner@3.1.4)(openapi-types@1.3.4)
@@ -57,12 +69,6 @@ importers:
       '@types/node':
         specifier: ^20.14.5
         version: 20.17.9
-      '@vinejs/vine':
-        specifier: 2.1.0
-        version: 2.1.0
-      bentocache:
-        specifier: 1.0.0-beta.9
-        version: 1.0.0-beta.9(knex@3.1.0)(tslib@2.8.1)
       c8:
         specifier: ^10.1.2
         version: 10.1.2
@@ -78,9 +84,6 @@ importers:
       husky:
         specifier: ^9.1.6
         version: 9.1.7
-      luxon:
-        specifier: 3.5.0
-        version: 3.5.0
       pinst:
         specifier: ^3.0.0
         version: 3.0.0
@@ -424,14 +427,14 @@ packages:
     resolution: {integrity: sha512-ulqQu4KMr1/sTFIYvqSdegHT8NIkt66tFAkugGnHA+1WAfEn6hMzNR+svjXGFRVLnapxvej67Z/LwchFrnLBUg==}
     engines: {node: '>=18.0.0', npm: '>=9.0.0'}
 
-  '@filante/arcessere@0.0.1':
-    resolution: {integrity: sha512-iAaHnOJBxnEcn55IQZQKQsskLxjWtc2W8I3po3rxITsZP2sK0B9fF/LE1V54A5GyQXl9fZlcAqTAlVaMShviCw==}
+  '@filante/arcessere@0.0.3':
+    resolution: {integrity: sha512-eMG5TraEn4gjvPpcklq7BKIMel4bwnpMd5o2JGWIj7JqEFKuwiaC4amXbLeIw/sW7Uy2vgKbNQE4KjQqO+gXlQ==}
     engines: {node: '>=20.6.0'}
     peerDependencies:
-      '@filante/imprimer': 0.0.1
+      '@filante/imprimer': 0.0.2
 
-  '@filante/imprimer@0.0.1':
-    resolution: {integrity: sha512-ajhI5X68ie1d5MwgOL+nmVVmFVajCbOJWNKvt/eT3ZUKJPJtaFlk5kz2p6vsHQ5mUkwU0vsoA3lD95ZbsamwQA==}
+  '@filante/imprimer@0.0.2':
+    resolution: {integrity: sha512-8Mb8XnrJHhm+Bg7Qlr1wGw9RgOhrH7hzxsvsy1rXUW/WeOZ2/DcpI4GaKhTULl++NTsPzC6dXuQvJu5W6h/H9A==}
     engines: {node: '>=20.6.0'}
 
   '@humanfs/core@0.19.1':
@@ -811,12 +814,12 @@ packages:
     resolution: {integrity: sha512-pq19gbaMOmFE3CbL0ZB8J8BFCo2ckfHBfaIsaOZgBIF4EoISJIdLX5xRhd0FGB0LlHReNRuzoJoMGpTjq8F2CQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vinejs/compiler@2.5.1':
-    resolution: {integrity: sha512-efiO/SCQSMCqz6LDZTI4R3Ceq1ik3K2IqefEbbch+ko4dZncaYmQWJpX/fXVwgmO78jTZuerzD4I2WphPJUCwg==}
+  '@vinejs/compiler@3.0.0':
+    resolution: {integrity: sha512-v9Lsv59nR56+bmy2p0+czjZxsLHwaibJ+SV5iK9JJfehlJMa501jUJQqqz4X/OqKXrxtE3uTQmSqjUqzF3B2mw==}
     engines: {node: '>=18.0.0'}
 
-  '@vinejs/vine@2.1.0':
-    resolution: {integrity: sha512-09aJ2OauxpblqiNqd8qC9RAzzm5SV6fTqZhE4e25j4cM7fmNoXRTjM7Oo8llFADMO4eSA44HqYEO3mkRRYdbYw==}
+  '@vinejs/vine@3.0.0':
+    resolution: {integrity: sha512-GeCAHLzKkL2kMFqatgqyiiNh+FILOSAV8x8imBDo6AWQ91w30Kaxw4FnzUDqgcd9z8aCYOBQ7RJxBBGfyr+USQ==}
     engines: {node: '>=18.16.0'}
 
   abstract-logging@2.0.1:
@@ -3256,17 +3259,17 @@ snapshots:
       qs: 6.13.1
       raw-body: 2.5.2
 
-  '@adonisjs/bouncer@3.1.4(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))':
+  '@adonisjs/bouncer@3.1.4(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))':
     dependencies:
       '@poppinss/utils': 6.8.3
     optionalDependencies:
-      '@adonisjs/core': 6.15.2(@vinejs/vine@2.1.0)
+      '@adonisjs/core': 6.15.2(@vinejs/vine@3.0.0)
 
   '@adonisjs/config@5.0.2':
     dependencies:
       '@poppinss/utils': 6.8.3
 
-  '@adonisjs/core@6.15.2(@vinejs/vine@2.1.0)':
+  '@adonisjs/core@6.15.2(@vinejs/vine@3.0.0)':
     dependencies:
       '@adonisjs/ace': 13.3.0
       '@adonisjs/application': 8.3.1(@adonisjs/config@5.0.2)(@adonisjs/fold@10.1.3)
@@ -3297,7 +3300,7 @@ snapshots:
       youch: 3.3.4
       youch-terminal: 2.2.3
     optionalDependencies:
-      '@vinejs/vine': 2.1.0
+      '@vinejs/vine': 3.0.0
 
   '@adonisjs/encryption@6.0.2':
     dependencies:
@@ -3384,12 +3387,12 @@ snapshots:
       vary: 1.1.2
       youch: 3.3.4
 
-  '@adonisjs/limiter@2.3.2(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))(@adonisjs/lucid@21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))(luxon@3.5.0))':
+  '@adonisjs/limiter@2.3.2(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))(@adonisjs/lucid@21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))(luxon@3.5.0))':
     dependencies:
-      '@adonisjs/core': 6.15.2(@vinejs/vine@2.1.0)
+      '@adonisjs/core': 6.15.2(@vinejs/vine@3.0.0)
       rate-limiter-flexible: 5.0.4
     optionalDependencies:
-      '@adonisjs/lucid': 21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))(luxon@3.5.0)
+      '@adonisjs/lucid': 21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))(luxon@3.5.0)
 
   '@adonisjs/logger@6.0.5':
     dependencies:
@@ -3397,10 +3400,10 @@ snapshots:
       abstract-logging: 2.0.1
       pino: 9.5.0
 
-  '@adonisjs/lucid@21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))(luxon@3.5.0)':
+  '@adonisjs/lucid@21.3.0(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))(luxon@3.5.0)':
     dependencies:
-      '@adonisjs/core': 6.15.2(@vinejs/vine@2.1.0)
-      '@adonisjs/presets': 2.6.3(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))
+      '@adonisjs/core': 6.15.2(@vinejs/vine@3.0.0)
+      '@adonisjs/presets': 2.6.3(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))
       '@faker-js/faker': 9.2.0
       '@poppinss/hooks': 7.2.4
       '@poppinss/macroable': 1.0.3
@@ -3426,9 +3429,9 @@ snapshots:
       - supports-color
       - tedious
 
-  '@adonisjs/presets@2.6.3(@adonisjs/core@6.15.2(@vinejs/vine@2.1.0))':
+  '@adonisjs/presets@2.6.3(@adonisjs/core@6.15.2(@vinejs/vine@3.0.0))':
     dependencies:
-      '@adonisjs/core': 6.15.2(@vinejs/vine@2.1.0)
+      '@adonisjs/core': 6.15.2(@vinejs/vine@3.0.0)
       '@poppinss/utils': 6.8.3
 
   '@adonisjs/prettier-config@1.4.0':
@@ -3697,15 +3700,15 @@ snapshots:
 
   '@faker-js/faker@9.2.0': {}
 
-  '@filante/arcessere@0.0.1(@filante/imprimer@0.0.1)':
+  '@filante/arcessere@0.0.3(@filante/imprimer@0.0.2)':
     dependencies:
-      '@filante/imprimer': 0.0.1
+      '@filante/imprimer': 0.0.2
       axios: 1.7.7
       qs: 6.13.0
     transitivePeerDependencies:
       - debug
 
-  '@filante/imprimer@0.0.1': {}
+  '@filante/imprimer@0.0.2': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -4114,13 +4117,13 @@ snapshots:
       '@typescript-eslint/types': 8.16.0
       eslint-visitor-keys: 4.2.0
 
-  '@vinejs/compiler@2.5.1': {}
+  '@vinejs/compiler@3.0.0': {}
 
-  '@vinejs/vine@2.1.0':
+  '@vinejs/vine@3.0.0':
     dependencies:
       '@poppinss/macroable': 1.0.3
       '@types/validator': 13.12.2
-      '@vinejs/compiler': 2.5.1
+      '@vinejs/compiler': 3.0.0
       camelcase: 8.0.0
       dayjs: 1.11.13
       dlv: 1.1.3

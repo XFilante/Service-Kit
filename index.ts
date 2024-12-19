@@ -8,3 +8,4 @@
 */
 
 export * from './src/safe_route.js'
+export * from './src/define_config.js'

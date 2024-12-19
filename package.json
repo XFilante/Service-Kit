@@ -1,7 +1,7 @@
 {
   "name": "@filante/service-kit",
   "description": "This is an adonisjs service kit",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "engines": {
     "node": ">=20.6.0"
   },
@@ -20,7 +20,8 @@
     "./extension/*": "./build/src/extension/*.js",
     "./middleware/*": "./build/src/middleware/*.js",
     "./provider/*": "./build/src/providers/*",
-    "./validator/*": "./build/src/validators/*"
+    "./validator/*": "./build/src/validators/*",
+    "./commands": "./build/commands/main.js"
   },
   "homepage": "https://github.com/XFilante/Service-Kit#readme",
   "repository": "https://github.com/XFilante/Service-Kit.git",
@@ -32,7 +33,7 @@
     "quick:test": "node --import=./tsnode.esm.js --enable-source-maps bin/test.ts",
     "test": "c8 nr quick:test",
     "prebuild": "nr clean",
-    "build": "tsc",
+    "build": "tsc && adonis-kit index build/commands",
     "changelog": "na changeset",
     "release:version": "changeset version",
     "release": "nr release:version && changeset publish",
@@ -70,8 +71,8 @@
     "@adonisjs/core": "^6.14.1",
     "@adonisjs/limiter": "^2.3.2",
     "@adonisjs/lucid": "^21.3.0",
-    "@vinejs/vine": "^3.0.0",
     "@filante/arcessere": "^0.0.3",
+    "@vinejs/vine": "^3.0.0",
     "bentocache": "1.0.0-beta.9",
     "luxon": "^3.5.0"
   },
@@ -89,8 +90,10 @@
   },
   "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387",
   "dependencies": {
+    "@filante/imprimer": "^0.0.2",
     "superjson": "^2.2.1",
+    "tinyexec": "^0.3.1",
     "ts-enum-util": "^4.1.0",
-    "@filante/imprimer": "^0.0.2"
+    "ts-morph": "^24.0.0"
   }
 }
